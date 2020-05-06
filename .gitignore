@@ -1,23 +1,31 @@
-# Compiled class file
-*.class
+public class Prontuario {
+	private Pessoa[] pessoa;
+	private int numeroProntuario;
 
-# Log file
-*.log
+	//metodo construtor da classe
+	public Prontuario(Pessoa[] pessoa, int numeroProntuario) {
+		super();
+		this.pessoa = pessoa;
+		this.numeroProntuario = numeroProntuario;
+	}
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+	//método para inserir paciente
+	/*public void novoProntuario(Paciente p) {
+		pessoa[numeroProntuario] = p;
+		numeroProntuario++;
+	}*/
+	/*método para inserir paciente
+	public void exibeProntuario() {
+		for(int i = 0; i < numeroProntuario; i++) {
+			paciente[i].exibeProntuario();
+			System.out.println();
+		}
+	}*/
+	public void exibeProntuario() {
+		System.out.println("** Prontuario **");
+		System.out.println("Nome: " + pessoa[numeroProntuario].getNome());
+		
+		
+	}
+	
+}
