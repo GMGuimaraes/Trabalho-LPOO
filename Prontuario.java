@@ -1,3 +1,4 @@
+
 public class Prontuario {
 	private Pessoa[] pessoa;
 	private int numeroProntuario;
@@ -23,9 +24,10 @@ public class Prontuario {
 	}*/
 	public void exibeProntuario() {
 		System.out.println("** Prontuario **");
-		System.out.println("Nome: " + pessoa[numeroProntuario].getNome());
-		
+		for(int i=0;i<numeroProntuario;i++)
+			System.out.println("Nome: " + pessoa[i].getNome());
 		
 	}
 	
 }
+
