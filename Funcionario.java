@@ -6,5 +6,9 @@ public class Funcionario extends Pessoa {
 	}
 
 	private int idFuncionario;
+
+	public String getName(){
+		return super.getNome();
+	}
 	
 }
