@@ -1,12 +1,12 @@
 
 public class Funcionario extends Pessoa {
-	public Funcionario(String nome, String cpf, char sexo) {
-		super(nome, cpf, sexo);
-		// TODO Auto-generated constructor stub
-	}
-
 	private int idFuncionario;
 
+	public Funcionario(String nome, String cpf, char sexo, String id) {
+		super(nome, cpf, sexo);
+		this.idFuncionario = id;
+		// TODO Auto-generated constructor stub
+	}
 	public String getName(){
 		return super.getNome();
 	}
