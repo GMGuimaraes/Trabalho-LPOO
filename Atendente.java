@@ -14,4 +14,20 @@ public class Atendente extends Funcionario {
 			return true;
 		}
 	}
+	public void encaminha(String areaEnfermidade){ //Relacionará enfermidade com especialidade médica
+		switch(areaEnfermidade.toLowerCase()){
+			case "cerebro":
+				System.out.println("neurologiasta");
+                break;
+            case "coracao":
+				System.out.println("cardiologista");
+                break;
+            case "pele":
+				System.out.println("dermatologia");
+                break;
+            case "articulacao":
+				System.out.println("reumatologista");
+                break;
+		}
+	}
 }	
