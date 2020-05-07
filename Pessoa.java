@@ -6,8 +6,8 @@ public class Pessoa {
 	public Pessoa() {
 		super();
 		this.nome = "NaoDeclarado";
-		this.cpf = "000000000-00";
-		this.sexo = 1;
+		this.cpf = "XXXXXXXXX-XX";
+		this.sexo = 109;
 	}
 	
 	public Pessoa(String nome, String cpf, char sexo) {
